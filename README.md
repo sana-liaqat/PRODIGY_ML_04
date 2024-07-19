@@ -24,49 +24,14 @@ This project aims to develop a hand gesture recognition system using computer vi
 The dataset should consist of images of hand gestures, organized in subdirectories named after the gesture classes (e.g., thumbs_up, thumbs_down, peace). Ensure that the dataset is placed in the data directory before running the preprocessing script.
 
 # Model Training
+The model training process involves:
 
-The model can be trained using either TensorFlow or PyTorch. The training script `train.py` handles the training process, including data loading, model training, and saving the trained model.
-
-### Training with TensorFlow
-
-Here is how you can train the model using TensorFlow:
-
-```python
-import numpy as np
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
-
-# Set image size and number of classes
-img_size = 64
-num_classes = 2
-
-# Load preprocessed data
-images = np.load('images.npy')
-labels = np.load('labels.npy')
-
-# Normalize the images
-images = images / 255.0
-
-# Convert labels to one-hot encoding
-labels = tf.keras.utils.to_categorical(labels, num_classes)
-
-# Create a simple CNN model
-model = Sequential([
-    Conv2D(32, (3, 3), activation='relu', input_shape=(img_size, img_size, 3)),
-    MaxPooling2D((2, 2)),
-    Flatten(),
-    Dense(128, activation='relu'),
-    Dense(num_classes, activation='softmax')
-])
-
-model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-
-# Train the model
-model.fit(images, labels, epochs=10, batch_size=32, validation_split=0.2)
-
-# Save the model
-model.save('hand_gesture_model.h5')'''
+1. Data Preparation: Load and normalize images, and convert labels to one-hot encoding.
+2. Model Architecture: Design a Convolutional Neural Network (CNN) suitable for image classification.
+3. Compilation: Configure the model with an optimizer, loss function, and metrics.
+4. Training: Fit the model to the training data, adjusting for epochs and batch size.
+5. Validation: Evaluate the model on a validation set to ensure generalization.
+6. Saving: Save the trained model for future use.
 
 # Evaluation
 The performance of the hand gesture recognition model was evaluated using a test dataset. The evaluation metrics include precision, recall, F1-score, and support for each gesture class. The model achieved high performance across all classes, with an overall accuracy of 100.0%.
