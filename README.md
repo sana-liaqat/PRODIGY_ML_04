@@ -66,7 +66,7 @@ accuracy                            1.00      4000
 macro avg       1.00      1.00      1.00      4000
 weighted avg 1.00 1.00 1.00 4000
 
-# Accuracy of the Model: 100.0%
+Accuracy of the Model: 100.0%
 
 # Acknowledgements
 Thanks to the open-source community for providing the tools and libraries used in this project. Special thanks to the creators of the datasets used for training and evaluation.
