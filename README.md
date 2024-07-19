@@ -57,10 +57,15 @@ The model can be evaluated using the evaluate.py script. This script loads the t
            precision    recall  f1-score   support
 
   01_palm       1.00      1.00      1.00       366
-     02_l       1.00      1.00      1.00       392
+  02_l          1.00      1.00      1.00       392
   03_fist       1.00      1.00      1.00       404
-
-04_fist_moved 1.00 1.00 1.00 404 05_thumb 1.00 1.00 1.00 403 06_index 1.00 1.00 1.00 409 07_ok 1.00 1.00 1.00 417 08_palm_moved 1.00 1.00 1.00 410 09_c 1.00 1.00 1.00 418 10_down 1.00 1.00 1.00 377
+  04_fist_moved 1.00      1.00      1.00       404 
+  05_thumb      1.00      1.00      1.00       403 
+  06_index      1.00      1.00      1.00       409 
+  07_ok         1.00      1.00      1.00       417 
+  08_palm_moved 1.00      1.00      1.00       410 
+  09_c          1.00      1.00      1.00       418 
+  10_down       1.00      1.00      1.00       377
 
 accuracy                            1.00      4000
 macro avg       1.00      1.00      1.00      4000
