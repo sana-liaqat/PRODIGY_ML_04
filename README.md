@@ -52,26 +52,26 @@ model.save('hand_gesture_model.h5')
 
 # Evaluation
 
-The model can be evaluated using the evaluate.py script. This script loads the trained model and evaluates its performance on the test dataset, providing metrics such as accuracy, precision, recall, and F1-score.
+The performance of the hand gesture recognition model was evaluated using a test dataset. The evaluation metrics include precision, recall, F1-score, and support for each gesture class. The model achieved high performance across all classes, with an overall accuracy of 100.0%.
 
-           precision    recall  f1-score   support
+Evaluation Metrics
 
-  01_palm       1.00      1.00      1.00       366
-  02_l          1.00      1.00      1.00       392
-  03_fist       1.00      1.00      1.00       404
-  04_fist_moved 1.00      1.00      1.00       404 
-  05_thumb      1.00      1.00      1.00       403 
-  06_index      1.00      1.00      1.00       409 
-  07_ok         1.00      1.00      1.00       417 
-  08_palm_moved 1.00      1.00      1.00       410 
-  09_c          1.00      1.00      1.00       418 
-  10_down       1.00      1.00      1.00       377
+Gesture	Precision	Recall	F1-Score	Support
+01_palm	1.00	1.00	1.00	366
+02_l	1.00	1.00	1.00	392
+03_fist	1.00	1.00	1.00	404
+04_fist_moved	1.00	1.00	1.00	404
+05_thumb	1.00	1.00	1.00	403
+06_index	1.00	1.00	1.00	409
+07_ok	1.00	1.00	1.00	417
+08_palm_moved	1.00	1.00	1.00	410
+09_c	1.00	1.00	1.00	418
+10_down	1.00	1.00	1.00	377
 
-accuracy                            1.00      4000
-macro avg       1.00      1.00      1.00      4000
-weighted avg 1.00 1.00 1.00 4000
+Overall Performance
+Accuracy: 100.0%
 
-Accuracy of the Model: 100.0%
+The model demonstrates excellent performance with perfect precision, recall, and F1-score across all gesture classes, indicating that it correctly identifies each gesture without any errors.
 
 # Acknowledgements
 Thanks to the open-source community for providing the tools and libraries used in this project. Special thanks to the creators of the datasets used for training and evaluation.
