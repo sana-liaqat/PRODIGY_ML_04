@@ -51,25 +51,26 @@ Save the model
 model.save('hand_gesture_model.h5')
 
 # Evaluation
-
 The performance of the hand gesture recognition model was evaluated using a test dataset. The evaluation metrics include precision, recall, F1-score, and support for each gesture class. The model achieved high performance across all classes, with an overall accuracy of 100.0%.
 
-Evaluation Metrics
+### Evaluation Metrics
 
-Gesture	Precision	Recall	F1-Score	Support
-01_palm	1.00	1.00	1.00	366
-02_l	1.00	1.00	1.00	392
-03_fist	1.00	1.00	1.00	404
-04_fist_moved	1.00	1.00	1.00	404
-05_thumb	1.00	1.00	1.00	403
-06_index	1.00	1.00	1.00	409
-07_ok	1.00	1.00	1.00	417
-08_palm_moved	1.00	1.00	1.00	410
-09_c	1.00	1.00	1.00	418
-10_down	1.00	1.00	1.00	377
+| Gesture       | Precision | Recall | F1-Score | Support |
+|---------------|-----------|--------|----------|---------|
+| 01_palm       | 1.00      | 1.00   | 1.00     | 366     |
+| 02_l          | 1.00      | 1.00   | 1.00     | 392     |
+| 03_fist        | 1.00      | 1.00   | 1.00     | 404     |
+| 04_fist_moved  | 1.00      | 1.00   | 1.00     | 404     |
+| 05_thumb       | 1.00      | 1.00   | 1.00     | 403     |
+| 06_index       | 1.00      | 1.00   | 1.00     | 409     |
+| 07_ok          | 1.00      | 1.00   | 1.00     | 417     |
+| 08_palm_moved  | 1.00      | 1.00   | 1.00     | 410     |
+| 09_c          | 1.00      | 1.00   | 1.00     | 418     |
+| 10_down       | 1.00      | 1.00   | 1.00     | 377     |
 
-Overall Performance
-Accuracy: 100.0%
+### Overall Performance
+
+- **Accuracy:** 100.0%
 
 The model demonstrates excellent performance with perfect precision, recall, and F1-score across all gesture classes, indicating that it correctly identifies each gesture without any errors.
 
